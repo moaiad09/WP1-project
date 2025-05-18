@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fun Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Add Navbar HERE -->
+    <div class="container mt-5">
+        <h2>Fun Page 🎉</h2>
+
+        <!-- SlideToggle Box -->
+        <button id="toggleBox" class="btn btn-primary">Hide Box</button>
+
+        <div style="min-height: 60px; padding-top: 20px;">
+            <div id="funBox" class="p-3 bg-warning mt-3">
+                Enjoy in our Fun Screen ^__^
+            </div>
+        </div>
+
+        <!-- Fade Image -->
+        <div class="fade-wrapper" style="max-width: 300px;">
+            <button id="toggleImage" class="btn btn-secondary w-100 mb-2">Fade Image</button>
+            <img id="funImage" style="padding-top: 20px;" src="images/image1.jpg" alt="Fun Image" class="img-fluid">
+        </div>
+
+        <!-- AJAX Text -->
+        <button id="loadQuote" class="btn btn-success mt-4">Load a Joke</button>
+        <div id="jokeText" class="mt-3 border p-3"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

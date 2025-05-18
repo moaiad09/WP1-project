@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About me</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <button id="theme" onclick="{changeContent()}">change theme</button>
+    <main>
+      <h2>Biography :</h2>
+      <span></span>
+      <p id="longText">
+        Hard-working person, always passionate for self-improvement,
+        fast-learner and dedicated to carry out objectives considering the
+        importance of time limitations, ability to adapt in different
+        work-environments and endure work pressure ,<button
+          id="show"
+          onclick="{show()}"
+        >
+          ...show more
+        </button>
+        <span id="mySpan" style="display: none"
+          >look forward to present valuable achievements for the
+          community.</span
+        >
+      </p>
+      <h2>Hobbies :</h2>
+      <p>
+        workout in gym - swimming - exploring new cultures and learning foreign
+        languages
+      </p>
+      <h2>personal goals :</h2>
+      <p>
+        - obtain master's degree from virtual university.<br />
+        - acquire high-paid position in a popular company like Google , Amazon
+        or any other equivalent company
+      </p>
+    </main>
+  </body>
+  <script>
+    function show() {
+      document.getElementById("show").style.display = "none";
+      document.getElementById("mySpan").style.display = "inline";
+    }
+    function changeContent() {
+      if (document.body.style.color == "white") {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+      } else {
+        document.body.style.backgroundColor = "gray";
+        document.body.style.color = "white";
+      }
+    }
+  </script>
+</html>

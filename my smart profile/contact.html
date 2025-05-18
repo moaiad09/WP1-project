@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <style>
+    div {
+      padding: 5px;
+    }
+  </style>
+  <body style="display: flex; justify-content: center">
+    <form
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 300px;
+        padding: 10px 20px;
+        border: dashed 2px black;
+        margin-top: 30px;
+      "
+    >
+      <h2>enter your data please :</h2>
+      <div><label>Name : </label><input type="text" required /> <br /></div>
+      <div><label>Email : </label><input type="email" required /> <br /></div>
+      <div>
+        <label>Age : </label
+        ><input type="number" min="10" max="100" required /> <br />
+      </div>
+      <div style="display: flexbox; justify-content: space-evenly">
+        <label>Gender : </label>
+        Male <input type="radio" name="gender" required /> Female<input
+          type="radio"
+          name="gender"
+          required
+        />
+      </div>
+      <br />
+      <label>Favorite language :</label>
+      <select>
+        <option>arabic</option>
+        <option>english</option></select
+      ><br />
+      <label>Message:</label
+      ><textarea rows="10" placeholder="enter your message here">
+write your message here... </textarea
+      >
+    </form>
+  </body>
+</html>
