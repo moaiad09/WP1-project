@@ -35,4 +35,15 @@ $(document).ready(function () {
   $('#animateBtn').click(function () {
     $('#animatedBox').slideUp(500).slideDown(500);
   });
+
+  // Set default theme
+  $('body').addClass('light-mode');
+
+  $('#themeToggle').on('change', function () {
+    if ($(this).is(':checked')) {
+      $('body').removeClass('light-mode').addClass('dark-mode');
+    } else {
+      $('body').removeClass('dark-mode').addClass('light-mode');
+    }
+  });
 });
