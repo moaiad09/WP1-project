@@ -16,4 +16,5 @@ $(document).ready(function () {
   $('#loadQuote').click(function () {
     $('#jokeText').load('quote.txt');
   });
+
 });
