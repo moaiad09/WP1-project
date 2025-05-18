@@ -17,4 +17,22 @@ $(document).ready(function () {
     $('#jokeText').load('quote.txt');
   });
 
+
+  $('#nameInput').on('keyup', function () {
+    const name = $(this).val();
+    $('#greetingText').text(name ? `Hello, ${name}! 👋` : 'Hello!');
+  });
+
+  $('#hoverBox').css('background-color', 'transparent');
+
+  // Hover effect
+  $('#hoverBox').hover(
+    function () { $(this).css('background-color', '#17a2b8'); }, // on hover
+    function () { $(this).css('background-color', 'transparent'); } // on leave
+  );
+
+  // Animation (slide)
+  $('#animateBtn').click(function () {
+    $('#animatedBox').slideUp(500).slideDown(500);
+  });
 });
